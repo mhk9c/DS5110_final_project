@@ -32,13 +32,14 @@ class Tools():
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'demoji'])
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tldextract'])
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'emoji'])
-        
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'spark-nlp'])
         
         
 #         sys.executable -m pip install demoji
 #         sys.executable -m pip install tldextract
 
-        sys.path.append(f'/home/{username}/.local/lib/python3.7/site-packages/')
+#         sys.path.append(f'/home/{username}/.local/lib/python3.7/site-packages/')
+        sys.path.append(f'/home/{username}/.local/lib/python3.8/site-packages/')
         
         
         
