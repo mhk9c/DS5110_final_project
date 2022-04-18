@@ -37,6 +37,17 @@ class Tools():
         print(f'installing package {x}')
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'jupyter-dash'])
         
+        x += 1
+        print(f'installing package {x}')
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'wordcloud'])
+        
+        x += 1
+        print(f'installing package {x}')
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'kaleido'])      
+        
+        
+        
+        
         print('Done Installing packages')
 
         
@@ -48,7 +59,7 @@ class Tools():
         
         
         
-    def save_df(self, _df, folder_name):
+    def save_df(self, _spark, _df, folder_name):
         '''
         saves a df to a parquet in some folder.
         '''
